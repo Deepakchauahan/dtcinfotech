@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+*,
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Roboto", system-ui;
+  color: #111;
+  background-color: #fff;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 0 4px #999;
+  z-index: 99;
+}
+header a {
+  color: #000;
+  /* text-decoration: none; */
+}
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.login h2,
+.data-table h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 24px;
+  text-align: center;
+}
+.login form {
+  padding: 16px;
+  border-radius: 6px;
+  box-shadow: 0 0 4px #999;
+}
+.form-handler {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 400px;
+}
+.form-handler label {
+  font-size: 16px;
+  font-weight: 500;
+}
+.form-handler input,
+.form-handler select {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #999;
+  background-color: #fff;
+  color: #000;
+}
+.form-handler select {
+  cursor: pointer;
+}
+.form-handler .error {
+  color: rgb(146, 0, 0);
+  font-size: 12px;
+}
+.login form button {
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  width: 200px;
+  font-weight: 500;
+}
+
+.pagination {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #999;
+  margin: 0;
+  list-style-type: none;
+  padding: 10px 0 0;
+}
+
+.pagination li {
+  padding: 0;
+  cursor: pointer;
+}
+.active {
+  color: rgb(112, 48, 3);
+  font-weight: bold;
+  border-bottom: 1px solid rgb(112, 48, 3);
+}
+.data-table {
+  margin-top: 80px;
+}
+
+.table-data-format {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 6px;
+  box-shadow: 0 0 4px #999;
+  padding: 16px;
+}
+.header-top {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid #999;
+}
+.header-top .form-handler {
+  min-width: 200px;
+}
+table {
+  margin: 20px 0;
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+table th,
+table td {
+  font-size: 14px;
+  padding: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+table td.text-center {
+  text-align: center;
+}
